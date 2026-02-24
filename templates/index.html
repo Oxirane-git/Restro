@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lead Generator</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #f4f4f4;
+      --surface:  #ffffff;
+      --border:   #d0d0d0;
+      --text:     #1a1a1a;
+      --muted:    #666666;
+      --accent:   #2563eb;
+      --accent-h: #1d4ed8;
+      --danger:   #dc2626;
+      --success:  #16a34a;
+      --tag-bg:   #e8edf8;
+      --log-bg:   #111111;
+      --log-text: #d4d4d4;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 32px 16px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      margin-bottom: 28px;
+    }
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    header p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    /* ── Form ── */
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 9px 12px;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: var(--bg);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input[type="text"]:focus {
+      border-color: var(--accent);
+    }
+    .hint {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 5px;
+    }
+
+    /* ── City Grid ── */
+    .city-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .city-header label { margin: 0; }
+    .toggle-all {
+      font-size: 12px;
+      color: var(--accent);
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      font-family: inherit;
+    }
+    .toggle-all:hover { text-decoration: underline; }
+
+    .city-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 6px;
+    }
+    .city-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      cursor: pointer;
+      padding: 5px 8px;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      transition: background 0.1s, border-color 0.1s;
+    }
+    .city-item:hover { background: var(--bg); }
+    .city-item input[type="checkbox"] {
+      width: 14px;
+      height: 14px;
+      accent-color: var(--accent);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .city-item.selected {
+      background: var(--tag-bg);
+      border-color: #bfcfef;
+    }
+
+    /* ── Buttons ── */
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+    }
+    .btn {
+      padding: 9px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover:not(:disabled) { background: var(--accent-h); }
+    .btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
+    .btn-secondary {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .btn-secondary:hover { background: #e8e8e8; }
+    .btn-success {
+      background: var(--success);
+      color: #fff;
+    }
+    .btn-success:hover { background: #15803d; }
+
+    .city-count {
+      font-size: 12px;
+      color: var(--muted);
+      margin-left: auto;
+    }
+
+    /* ── Log Panel ── */
+    #log-panel {
+      display: none;
+    }
+    #log-box {
+      background: var(--log-bg);
+      color: var(--log-text);
+      font-family: "SFMono-Regular", "Consolas", "Fira Code", monospace;
+      font-size: 12.5px;
+      line-height: 1.6;
+      padding: 16px;
+      border-radius: 5px;
+      height: 360px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    #log-box .line-done   { color: #4ade80; }
+    #log-box .line-error  { color: #f87171; }
+    #log-box .line-skip   { color: #94a3b8; }
+    #log-box .line-search { color: #60a5fa; }
+    #log-box .line-step   { color: #fbbf24; font-weight: bold; }
+
+    /* ── Status bar ── */
+    .status-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #aaa;
+      flex-shrink: 0;
+    }
+    .status-dot.running { background: var(--accent); animation: pulse 1s infinite; }
+    .status-dot.done    { background: var(--success); animation: none; }
+    .status-dot.error   { background: var(--danger); animation: none; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.35; }
+    }
+    #status-text {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* ── Download section ── */
+    #download-section {
+      display: none;
+      margin-top: 14px;
+    }
+
+    /* ── Existing CSVs ── */
+    #csv-list-section { display: none; }
+    .csv-list { list-style: none; }
+    .csv-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .csv-list li:last-child { border-bottom: none; }
+    .csv-name { color: var(--text); font-family: monospace; font-size: 12px; }
+    .csv-dl {
+      font-size: 12px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .csv-dl:hover { text-decoration: underline; }
+
+    /* ── Error banner ── */
+    #error-banner {
+      display: none;
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      color: var(--danger);
+      padding: 10px 14px;
+      border-radius: 5px;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Lead Generator</h1>
+    <p>Google Maps → email scrape → CSV download</p>
+  </header>
+
+  <div id="error-banner"></div>
+
+  <!-- ── Config Card ── -->
+  <div class="card" id="config-card">
+    <h2>Configuration</h2>
+
+    <div style="margin-bottom: 20px;">
+      <label for="niche">Business Niche</label>
+      <input type="text" id="niche" placeholder="e.g. yoga studios, dentists, cafes" />
+      <p class="hint">Tip: use a single niche per run. For synonyms, re-run with "coffee shops" after "cafes".</p>
+    </div>
+
+    <div>
+      <div class="city-header">
+        <label>Cities</label>
+        <button class="toggle-all" id="toggle-btn" onclick="toggleAll()">Deselect All</button>
+      </div>
+      <div class="city-grid" id="city-grid">
+        {% for city in cities %}
+        <label class="city-item selected" data-city="{{ city }}">
+          <input type="checkbox" value="{{ city }}" checked onchange="onCityChange(this)" />
+          {{ city }}
+        </label>
+        {% endfor %}
+      </div>
+      <p class="hint" id="city-hint">25 of 25 cities selected</p>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn-primary" id="run-btn" onclick="startRun()">Generate Leads</button>
+      <span class="city-count" id="city-count-badge"></span>
+    </div>
+  </div>
+
+  <!-- ── Log Card ── -->
+  <div class="card" id="log-panel">
+    <div class="status-bar">
+      <div class="status-dot" id="status-dot"></div>
+      <span id="status-text">Starting…</span>
+    </div>
+
+    <div id="log-box"></div>
+
+    <div id="download-section">
+      <div style="display:flex; gap:10px; margin-top:14px;">
+        <a id="download-btn" class="btn btn-success" href="#" download>Download CSV</a>
+        <button class="btn btn-secondary" onclick="resetUI()">New Run</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Previous CSVs Card ── -->
+  <div class="card" id="csv-list-section">
+    <h2>Previous CSVs</h2>
+    <ul class="csv-list" id="csv-list"></ul>
+  </div>
+
+</div>
+
+<script>
+  let allSelected = true;
+
+  function toggleAll() {
+    allSelected = !allSelected;
+    document.querySelectorAll('#city-grid input[type="checkbox"]').forEach(cb => {
+      cb.checked = allSelected;
+      cb.closest('.city-item').classList.toggle('selected', allSelected);
+    });
+    document.getElementById('toggle-btn').textContent = allSelected ? 'Deselect All' : 'Select All';
+    updateHint();
+  }
+
+  function onCityChange(cb) {
+    cb.closest('.city-item').classList.toggle('selected', cb.checked);
+    updateHint();
+    const all = document.querySelectorAll('#city-grid input[type="checkbox"]');
+    const checked = document.querySelectorAll('#city-grid input[type="checkbox"]:checked');
+    allSelected = all.length === checked.length;
+    document.getElementById('toggle-btn').textContent = allSelected ? 'Deselect All' : 'Select All';
+  }
+
+  function updateHint() {
+    const total = document.querySelectorAll('#city-grid input[type="checkbox"]').length;
+    const n = document.querySelectorAll('#city-grid input[type="checkbox"]:checked').length;
+    document.getElementById('city-hint').textContent = `${n} of ${total} cities selected`;
+  }
+
+  function getSelectedCities() {
+    return Array.from(
+      document.querySelectorAll('#city-grid input[type="checkbox"]:checked')
+    ).map(cb => cb.value);
+  }
+
+  function showError(msg) {
+    const el = document.getElementById('error-banner');
+    el.textContent = msg;
+    el.style.display = 'block';
+    setTimeout(() => { el.style.display = 'none'; }, 6000);
+  }
+
+  function appendLog(text) {
+    const box = document.getElementById('log-box');
+    const div = document.createElement('div');
+
+    // Colorize lines
+    let cls = '';
+    const t = text.trim();
+    if (t.startsWith('[DONE]') || t.startsWith('  [DONE]'))     cls = 'line-done';
+    else if (t.startsWith('[ERROR]') || t.includes('[ERR]'))     cls = 'line-error';
+    else if (t.startsWith('[SKIP]') || t.startsWith('  [SKIP]')) cls = 'line-skip';
+    else if (t.startsWith('[SEARCH]') || t.startsWith('  [SEARCH]')) cls = 'line-search';
+    else if (t.startsWith('──'))                                  cls = 'line-step';
+
+    if (cls) div.className = cls;
+    div.textContent = text;
+    box.appendChild(div);
+    box.scrollTop = box.scrollHeight;
+  }
+
+  async function startRun() {
+    const niche = document.getElementById('niche').value.trim();
+    if (!niche) { showError('Please enter a business niche.'); return; }
+
+    const cities = getSelectedCities();
+    if (cities.length === 0) { showError('Select at least one city.'); return; }
+
+    // Reset UI
+    document.getElementById('log-box').innerHTML = '';
+    document.getElementById('download-section').style.display = 'none';
+    document.getElementById('log-panel').style.display = 'block';
+    document.getElementById('run-btn').disabled = true;
+
+    const dot = document.getElementById('status-dot');
+    dot.className = 'status-dot running';
+    document.getElementById('status-text').textContent = `Running — ${niche} (${cities.length} cities)`;
+
+    // Start job
+    let jobId;
+    try {
+      const res = await fetch('/run', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ niche, cities }),
+      });
+      const data = await res.json();
+      if (!res.ok || data.error) { showError(data.error || 'Failed to start job.'); resetUI(); return; }
+      jobId = data.job_id;
+    } catch (e) {
+      showError('Could not connect to server.'); resetUI(); return;
+    }
+
+    // Stream logs
+    const es = new EventSource(`/stream/${jobId}`);
+    es.onmessage = (e) => {
+      const msg = e.data;
+      if (msg.startsWith('__DONE__:')) {
+        es.close();
+        const csvFile = msg.replace('__DONE__:', '');
+        dot.className = 'status-dot done';
+        document.getElementById('status-text').textContent = 'Done';
+        const dlBtn = document.getElementById('download-btn');
+        dlBtn.href = `/download/${encodeURIComponent(csvFile)}`;
+        dlBtn.download = csvFile;
+        document.getElementById('download-section').style.display = 'block';
+        document.getElementById('run-btn').disabled = false;
+        loadCsvList();
+      } else if (msg === '__ERROR__') {
+        es.close();
+        dot.className = 'status-dot error';
+        document.getElementById('status-text').textContent = 'Error — check logs';
+        document.getElementById('run-btn').disabled = false;
+      } else {
+        appendLog(msg);
+      }
+    };
+    es.onerror = () => {
+      es.close();
+      dot.className = 'status-dot error';
+      document.getElementById('status-text').textContent = 'Connection lost';
+      document.getElementById('run-btn').disabled = false;
+    };
+  }
+
+  function resetUI() {
+    document.getElementById('log-panel').style.display = 'none';
+    document.getElementById('run-btn').disabled = false;
+    document.getElementById('niche').value = '';
+  }
+
+  async function loadCsvList() {
+    try {
+      const res = await fetch('/csvs');
+      const files = await res.json();
+      const section = document.getElementById('csv-list-section');
+      const ul = document.getElementById('csv-list');
+      if (files.length === 0) { section.style.display = 'none'; return; }
+      ul.innerHTML = files.map(f =>
+        `<li>
+          <span class="csv-name">${f}</span>
+          <a class="csv-dl" href="/download/${encodeURIComponent(f)}" download="${f}">Download</a>
+        </li>`
+      ).join('');
+      section.style.display = 'block';
+    } catch {}
+  }
+
+  // Load existing CSVs on page load
+  loadCsvList();
+</script>
+</body>
+</html>
