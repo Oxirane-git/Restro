@@ -1,0 +1,17 @@
+# Secrets & credentials
+.env
+credentials.json
+token.json
+
+# Temporary files (keep the directory, ignore contents)
+.tmp/*
+!.tmp/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/

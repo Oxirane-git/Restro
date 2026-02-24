@@ -1,0 +1,16 @@
+# Environment
+python-dotenv
+
+# Google APIs (Sheets, Drive, etc.)
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+
+# OpenAI
+openai
+
+# Web scraping
+requests
+beautifulsoup4
+lxml
