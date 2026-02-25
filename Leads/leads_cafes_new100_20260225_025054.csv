@@ -1,0 +1,101 @@
+business_name,address,owner_name,email,phone,website,category,city,source
+Cafe Medina,"780 Richards St, Vancouver, BC V6B 2W1, Canada",,reservations@medinacafe.com,(604) 879-3114,http://www.medinacafe.com/,cafe,"Vancouver, Canada",google_maps
+"Perfecto Cafe, Bakery & Gelato (Davie)","605 Davie St, Vancouver, BC V6B 2G6, Canada",,info@perfectocafe.ca,(604) 428-2112,https://www.perfectocafe.ca/,cafe,"Vancouver, Canada",google_maps
+New Amsterdam Cafe,"301 W Hastings St, Vancouver, BC V6B 1H6, Canada",,hi@newamsterdamcafe.com,(604) 682-8955,http://newamsterdamcafe.com/,restaurant,"Vancouver, Canada",google_maps
+Prototype Coffee,"883 E Hastings St, Vancouver, BC V6A 1R8, Canada",,coffee@prototypecoffee.ca,(604) 251-6451,https://www.prototypecoffee.ca/,cafe,"Vancouver, Canada",google_maps
+Nelson the Seagull Cafe | Sourdough Baked Daily,"315 Carrall St, Vancouver, BC V6B 2J4, Canada",,info@nelsontheseagull.com,(604) 681-5776,http://www.nelsontheseagull.com/,cafe,"Vancouver, Canada",google_maps
+Café Intermezzo - Midtown,"1065 Peachtree St NE, Atlanta, GA 30309, USA",,polson@cafeintermezzo.com,(404) 355-0411,http://www.cafeintermezzo.com/,cafe,"Atlanta, USA",google_maps
+Black Coffee Atlanta,"1800 Jonesboro Rd SE Suite C, Atlanta, GA 30315, USA",,contact@theblackcoffeecompany.com,(404) 482-1098,https://www.theblackcoffeecompany.com/black-coffee-atl,coffee shop,"Atlanta, USA",google_maps
+Carroll Street Cafe,"208 Carroll St SE, Atlanta, GA 30312, USA",,carrollstreetcafe@gmail.com,(404) 577-2700,http://carrollstreetcabbagetown.com/,cafe,"Atlanta, USA",google_maps
+Café Lucia,"57 Forsyth St NW, Atlanta, GA 30303, USA",,cafelucia.shop@gmail.com,(404) 968-9658,http://cafelucia.shop/,coffee shop,"Atlanta, USA",google_maps
+Drip,"928 Garrett St B, Atlanta, GA 30316, USA",,dripatl@hotmail.com,(404) 627-7375,http://www.dripatlanta.com/,coffee shop,"Atlanta, USA",google_maps
+Omni Coffee & Eggs,"261 Peters St SW, Atlanta, GA 30313, USA",,info@omnicoffeeandeggs.com,(404) 254-2029,http://omnicoffeeandeggs.com/,cafe,"Atlanta, USA",google_maps
+Condesa Coffee,"480 John Wesley Dobbs Ave NE UNIT 100, Atlanta, GA 30312, USA",,info@condesacoffee.com,(404) 524-5054,http://www.condesacoffee.com/oldfourthward,coffee shop,"Atlanta, USA",google_maps
+Black Coffee ATL,"1246 Allene Ave SW, Atlanta, GA 30310, USA",,westside@blackcoffeeatl.com,(404) 343-1565,http://www.blackcoffeeatl.com/,coffee shop,"Atlanta, USA",google_maps
+The Coffee House Barcelona,"Carrer de València, 143, Eixample, 08011 Barcelona, Spain",,thecoffeehousebcn@gmail.com,631 05 08 36,https://www.thecoffeehousebcn.com/,brunch restaurant,"Barcelona, Spain",google_maps
+Dalston Coffee Barcelona - Cafè d'especialitat - Coffee Roasters,"Carrer de les Ramelleres, 16, Ciutat Vella, 08001 Barcelona, Spain",,info@dalstoncoffee.com,623 98 27 94,http://www.dalstoncoffee.com/,cafe,"Barcelona, Spain",google_maps
+Vera Cafè,"Carrer d'En Mònec, 6, Ciutat Vella, 08003 Barcelona, Spain",,veraacoffee@gmail.com,638 53 67 02,http://veraacafe.com/,coffee shop,"Barcelona, Spain",google_maps
+Bloome By Sasha | Brunch Sin Gluten Gótico,"Via Laietana, 45, Ciutat Vella, 08003 Barcelona, Spain",,bloomebysasha@gmail.com,602 50 03 35,https://www.bloomebysasha.es/brunch-gotico,dog cafe,"Barcelona, Spain",google_maps
+Roast Club Café,"Carrer de València, 190, Eixample, 08011 Barcelona, Spain",,info@roastclub.coffee,935 18 77 11,http://roastclub.coffee/,cafe,"Barcelona, Spain",google_maps
+paradero | Barcelona,"Carrer del Comte Borrell, 107, Eixample, 08015 Barcelona, Spain",,info@paradero.eu,613 03 09 14,http://www.paradero.eu/,cafeteria,"Barcelona, Spain",google_maps
+Three Marks Coffee,"Carrer d'Ausiàs Marc, 151, Eixample, 08013 Barcelona, Spain",,club@threemarkscoffee.com,617 82 42 84,http://www.threemarkscoffee.com/,coffee shop,"Barcelona, Spain",google_maps
+NOVELA - COFFEE / BRUNCH / COCKTAILS,"Carrer d'Ausiàs Marc, 31, Eixample, 08010 Barcelona, Spain",,info@novelabcn.com,931 65 34 40,http://www.novelabcn.com/,brunch restaurant,"Barcelona, Spain",google_maps
+Joe's Café Dubai,"fashion Avenue First Floor, Dubai Mall Star Atrium - Gate 6 - Burj Khalifa - Downtown Dubai - Dubai - United Arab Emirates",,joescafedubai@binhendiholding.com,04 320 0040,https://www.joescafedubai.com/,restaurant,"Dubai, UAE",google_maps
+Hoof Dubai Mall,Dubai Mall service road - Burj Khalifa - Downtown Dubai - Dubai - United Arab Emirates,,info@behindthecup.ae,04 332 9950,https://behindthecup.ae/,coffee shop,"Dubai, UAE",google_maps
+"Arabian Tea House Restaurant & Cafe - Al Fahidi, Dubai",Bastakiya Opposite Musalla Post Office - Al Fahidi St - Bur Dubai - Al Fahidi - Dubai - United Arab Emirates,,info@arabianteahouse.com,04 353 5071,http://www.arabianteahouse.com/,middle eastern restaurant,"Dubai, UAE",google_maps
+Ores Cafe,Street - 442 شارع الوصل - opposite Boxpark - جميرا - جميرا الثانية - دبي - United Arab Emirates,,info@orescafe.com,050 945 4111,http://orescafe.com/,cafe,"Dubai, UAE",google_maps
+Nargileci Eleven Cafe,Building Al Emreef St - Marsa Dubai - Dubai Marina - Dubai - United Arab Emirates,,nargileci@neleven.ae,04 591 1612,https://nargileci.neleven.ae/,cafe,"Dubai, UAE",google_maps
+Nomad Day Bar,25hours Hotel Dubai One Central - شارع المستقبل - off شارع الشيخ زايد - المركز التجاري الثانية - دبي - United Arab Emirates,,coffee@nomaddaybar.com,04 210 2522,https://www.nomaddaybar.com/,cafe,"Dubai, UAE",google_maps
+TEN 11 (The Dubai Mall),Level 2 Fashion Avenue The Dubai Mall - برج خليفة - وسط مدينة دبي - دبي - United Arab Emirates,The Managing Director,ten11cafe@gmail.com,600 533339,https://www.ten11cafe.ae/,coffee shop,"Dubai, UAE",google_maps
+Stomping Grounds,98 12D St - Jumeirah - Jumeirah 1 - Dubai - United Arab Emirates,,info@stompinggrounds.ae,04 344 4451,http://www.stompinggrounds.ae/,cafe,"Dubai, UAE",google_maps
+Bruncho,"270 Deansgate, Manchester M3 4JB, UK",,info@oralounge.uk,07708 433823,https://bruncho.co.uk/,cafe,"Manchester, UK",google_maps
+Evelyn's,"44 Tib St, Manchester M4 1LA, UK",,hello@evelyns.co,0161 834 3303,http://www.evelyns.co/,restaurant,"Manchester, UK",google_maps
+Sugar Junction,"60 Tib St, Manchester M4 1LG, UK",,sugarjunctionmcr@gmail.com,0161 839 4753,http://www.sugarjunction.co.uk/,cafe,"Manchester, UK",google_maps
+Cafe North,"66 Shudehill, Manchester M4 4AA, UK",,cafenorth@outlook.com,0161 637 7480,http://www.cafenorth.org/,cafe,"Manchester, UK",google_maps
+The Koffee Pot,"84-86 Oldham St, Manchester M4 1LE, UK",,hello@thekoffeepot.co.uk,0161 236 8918,https://www.thekoffeepot.co.uk/menus,brunch restaurant,"Manchester, UK",google_maps
+The Populus,"146 Neil Rd, Singapore 088875",,enquiries@thepopuluscafe.com,6635 8420,https://thepopulus.cafe/,cafe,Singapore,google_maps
+Common Man Coffee Roasters - Martin Road,"22 Martin Rd, #01-00, Singapore 239058",,training@cmcroasters.com,6836 4695,https://commonmancoffeeroasters.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_martin_road,cafe,Singapore,google_maps
+MERCI MARCEL ORCHARD,"390 Orchard Road, 01-03 Palais Renaissance, 390 Orchard Rd, #01 - 03 / 04, Singapore 238871",,hello@mercimarcelgroup.com,6970 9792,http://www.mercimarcelgroup.com/,french restaurant,Singapore,google_maps
+Rise Bakehouse @ TripleOne Somerset,"111 Somerset Rd, #01-05 TripleOne Somerset, Singapore 238164",,hello@risebakehouse.sg,8928 9111,https://risebakehouse.sg/,cafe,Singapore,google_maps
+Brunches Cafe,"96 Rangoon Rd, Singapore 218381",,contactus@brunches.sg,8685 8488,http://brunches.sg/,cafe,Singapore,google_maps
+Wildseed Café at The Summerhouse,"3 Park Ln, Level 1A Seletar Aerospace Drive, Singapore 798387",,enquiry@thesummerhouse.sg,8126 7524,https://www.wildseedcafe.sg/the-summerhouse,cafe,Singapore,google_maps
+Cafe de Muse - The Restaurant,"350 Orchard Road, Shaw House, #01-K5/K6 Orchard, Singapore 238868",,jris@cafedemusesg.com,6970 5011,https://www.cafedemusesg.com/,restaurant,Singapore,google_maps
+Wildseed Cafe At The Garage,"50 Cluny Park Rd, Level 1 Singapore Botanic Gardens, Singapore 257488",,wildseedcafesbg@thegarage.sg,9815 3213,https://www.wildseedcafe.sg/the-garage,cafe,Singapore,google_maps
+CAFE KREAMS,"32 Maxwell Rd, #01-07 Maxwell Chambers, Singapore 069115",,admin@mininve.com,9673 2307,http://www.kreams.sg/,cafe,Singapore,google_maps
+The Book Cafe,"20 Martin Rd, #01-02 Seng Kee Building, Singapore 239070",,info@thebookcafe.com.sg,6887 5430,https://www.thebookcafesg.com/,cafe,Singapore,google_maps
+Le Jardin Cafe | Fort Canning,"5 Cox Terrace, Level 2 Fort Canning Arts Centre, Singapore 179620",,enquiries@lejardin.com.sg,8870 9977,http://www.lejardin.com.sg/,european restaurant,Singapore,google_maps
+Atlas Coffeehouse,"6 Duke's Rd, Singapore 268886",,hello@atlascoffeehouse.com.sg,6314 2674,http://www.atlascoffeehouse.com.sg/,cafe,Singapore,google_maps
+Symmetry,"9 Jln Kubor, #01-01, Singapore 199206",,info@symmetry.com.sg,6291 9901,http://www.symmetry.com.sg/,coffee shop,Singapore,google_maps
+Chuffed,"43 High Street, Auckland CBD, Auckland 1010, New Zealand",,chuffedbooking@gmail.com,09 367 6801,https://www.chuffed.co.nz/,cafe,"Auckland, New Zealand",google_maps
+Scarecrow Mediterranean Cafe,"33 Victoria Street East, Auckland 1010, New Zealand",,store@scarecrow.co.nz,09 377 1333,http://scarecrow.co.nz/,cafe,"Auckland, New Zealand",google_maps
+Crave,"6 Morningside Drive, Morningside, Auckland 1025, New Zealand",,bookings@cravecafe.co.nz,09 845 4714,http://cravecafe.co.nz/,cafe,"Auckland, New Zealand",google_maps
+MELBA Vulcan,"33 Vulcan Lane, Auckland CBD, Auckland 1010, New Zealand",,vulcan@melba.nz,09 377 0091,https://melba.nz/vulcan-lane,cafe,"Auckland, New Zealand",google_maps
+Honey Cafe CBD,"44/46 Lorne Street, Auckland CBD, Auckland 1010, New Zealand",,honeycafecbd2025@gmail.com,09 300 6327,https://honeycafe.co.nz/cbd/,cafe,"Auckland, New Zealand",google_maps
+FLUFF Cafe & Eatery,"Unit 7G/38 Khyber Pass Road, Grafton, Auckland 1023, New Zealand",,info@fluffhouse.co.nz,09 282 1206,https://www.fluffhouse.co.nz/,coffee shop,"Auckland, New Zealand",google_maps
+Little Q,"460 New North Road, Kingsland, Auckland 1021, New Zealand",,cafe@littleq.co.nz,09 815 0660,https://littleq.co.nz/,cafe,"Auckland, New Zealand",google_maps
+Winona Forever,"100 Parnell Road, Parnell, Auckland 1052, New Zealand",,info@winonaforever.co.nz,09 974 2796,http://winonaforever.co.nz/,cafe,"Auckland, New Zealand",google_maps
+Bahar Bakery & Cafe,"579 Robson St, Vancouver, BC V6B 1A6, Canada",,baharbakerycafe@gmail.com,,https://www.baharbakery.ca/,bakery,"Vancouver, Canada",google_maps
+Ezra & Gil,"20 Hilton St, Manchester M1 1FR, UK",,hello@ezraandgil.co.uk,,http://www.ezraandgil.com/,cafe,"Manchester, UK",google_maps
+POT KETTLE BLACK Barton Arcade,"Manchester M3 2BW, UK",,hello@potkettleblackltd.co.uk,,https://potkettleblackltd.co.uk/,cafe,"Manchester, UK",google_maps
+Federal Cafe Bar,"Unit B2 - 2, Circle Square, Oxford Rd, Manchester M1 7FS, UK",,jobs@federalcafe.co.uk,,https://www.federalcafe.co.uk/,brunch restaurant,"Manchester, UK",google_maps
+Bestie Cafe,"179/183 Karangahape Road, Auckland CBD, Auckland 1010, New Zealand",,info@bestiecafe.co.nz,,http://bestiecafe.co.nz/,cafe,"Auckland, New Zealand",google_maps
+Revolver,"325 Cambie St., Vancouver, BC V6B 2N4, Canada",,,(604) 558-4444,http://revolvercoffee.ca/,coffee shop,"Vancouver, Canada",google_maps
+Guffo Café,"331 Howe St, Vancouver, BC V6C 3N2, Canada",,,(604) 620-3660,https://guffocafe.shop/,cafe,"Vancouver, Canada",google_maps
+Breka Bakery & Café - Davie,"855 Davie St, Vancouver, BC V6Z 1B7, Canada",,,(604) 428-8080,https://www.breka.ca/,bakery,"Vancouver, Canada",google_maps
+Wicked Cafe,"1399 W 7th Ave, Vancouver, BC V6H 2T9, Canada",,,(672) 999-9493,https://www.instagram.com/wicked_cafe,cafe,"Vancouver, Canada",google_maps
+cafe & life co.,"511 W 7th Ave, Vancouver, BC V5Z 1B4, Canada",,,(604) 336-9888,https://www.cafeandlifeco.com/,coffee shop,"Vancouver, Canada",google_maps
+Jam Cafe,"556 Beatty St, Vancouver, BC V6B 2L3, Canada",,,(778) 379-1992,https://jamcafes.com/,cafe,"Vancouver, Canada",google_maps
+cafeclub.,"1018 W Georgia St, Vancouver, BC V6E 2Y2, Canada",,,(236) 479-2222,http://www.cafeclub.ca/,coffee shop,"Vancouver, Canada",google_maps
+Caffe Mira,"1225 Burrard St, Vancouver, BC V6Z 1Z5, Canada",,,(604) 423-9388,http://caffemira.com/,coffee shop,"Vancouver, Canada",google_maps
+Breka Bakery & Café - Bute,"812 Bute St, Vancouver, BC V6E 1E5, Canada",,,(604) 620-8200,http://breka.ca/,bakery,"Vancouver, Canada",google_maps
+lovelarte,"345 Robson St #101, Vancouver, BC V6B 0H3, Canada",,,(604) 599-7856,http://www.lovelarte.com/,cafe,"Vancouver, Canada",google_maps
+Timbertrain Coffee Roasters - Gastown,"311 W Cordova St, Vancouver, BC V6B 4K2, Canada",,,(236) 513-4377,https://timbertrain.ca/,cafe,"Vancouver, Canada",google_maps
+Foxtail Coffee - Midtown,"1230 W Peachtree St NW unit 120, Atlanta, GA 30309, USA",,,(470) 788-8006,https://www.foxtailcoffee.com/locations/foxtail-coffee-midtown,coffee shop,"Atlanta, USA",google_maps
+ADios Cafe,"180 Walker St SW ste d, Atlanta, GA 30313, USA",,,(404) 574-5679,https://adioscafe.com/,breakfast restaurant,"Atlanta, USA",google_maps
+Daily Dose Coffee,"907 Memorial Dr SE Suite 112, Atlanta, GA 30316, USA",,,(404) 254-1188,https://www.atlantacoffeeshops.com/daily-dose-coffee,coffee shop,"Atlanta, USA",google_maps
+Bellwood Coffee - East Atlanta Village,"1336 Glenwood Ave SE, Atlanta, GA 30316, USA",,,(678) 986-2822,http://bellwoodcoffee.com/,coffee shop,"Atlanta, USA",google_maps
+Prevail Union | ATL,"1050 Howell Mill Rd NW, Atlanta, GA 30318, USA",,,(678) 837-5440,http://www.prevailcoffee.com/,coffee shop,"Atlanta, USA",google_maps
+Chrome Yellow,"501 Edgewood Ave SE, Atlanta, GA 30312, USA",,,(470) 355-1340,https://chrome-yellow.com/,coffee shop,"Atlanta, USA",google_maps
+Harbor Coffee,"331 Elizabeth St NE suite c, Atlanta, GA 30307, USA",,,(404) 678-1561,http://www.harborcoffeeatl.com/,coffee shop,"Atlanta, USA",google_maps
+Read Shop by The Merchant,"4300 Paces Ferry Rd SE ste 125, Atlanta, GA 30339, USA",,,(678) 742-7853,http://www.readshopatl.com/,coffee shop,"Atlanta, USA",google_maps
+LITTLE FERN,"Carrer de Pere IV, 168, Sant Martí, 08005 Barcelona, Spain",,,938 08 93 17,http://www.littleferncafe.com/,brunch restaurant,"Barcelona, Spain",google_maps
+Coffee Casa,"Carrer dels Carders, 25, Ciutat Vella, 08003 Barcelona, Spain",,,655 14 17 06,http://coffeecasa.es/,cafe,"Barcelona, Spain",google_maps
+Cafè Menssana,"Carrer de Sardenya, 48, Sant Martí, 08005 Barcelona, Spain",,,936 24 35 05,http://cafemenssana.com/,restaurant,"Barcelona, Spain",google_maps
+Orto cafe,395 Al Athar Street - Jumeirah - Jumeira Second - Dubai - United Arab Emirates,,,04 345 5060,https://instagram.com/ortodubai?igshid=MzRlODBiNWFlZA==,cafe,"Dubai, UAE",google_maps
+AVE Dubai,Dubai Fountain St 502 Empire Heights Tower A - الخليج التجاري - دبي - United Arab Emirates,,,054 444 1254,http://avedubai.ae/,restaurant,"Dubai, UAE",google_maps
+THE SIX Board Game Cafe - DOWNTOWN,Burj Vista - Sheikh Mohammed bin Rashid Blvd - Burj Khalifa - Downtown Dubai - Dubai - United Arab Emirates,,,04 334 2666,http://www.thesixcafe.com/,cafe,"Dubai, UAE",google_maps
+BRIX Café,Jumeirah Fishing Harbour - Shop 1 - Al Urouba St - Jumeirah - Jumeira First - Dubai - United Arab Emirates,,,054 515 7861,https://brixdessert.com/cafe,coffee shop,"Dubai, UAE",google_maps
+Flat12 Cafe,Rashid - Dubai - Shed 3 Marina Cubes Street - مدينة دبي الملاحية - ميناء راشد - دبي - United Arab Emirates,,,04 228 7123,https://www.instagram.com/flat12cafe?igsh=MW1lbm43dnh6cTZncg==,coffee shop,"Dubai, UAE",google_maps
+Darbuneh Cafe,Jumeira St - Jumeirah - Jumeirah 2 - Dubai - United Arab Emirates,,,04 331 9999,https://darbuneh.com/,cafe,"Dubai, UAE",google_maps
+Forever Rose Cafe - Best Coffee Shop in Dubai,Boxpark - 467 Al Wasl Rd - Al Wasl - Dubai - United Arab Emirates,,,04 548 4210,https://foreverrosecafe.com/,coffee shop,"Dubai, UAE",google_maps
+Café Bateel - Dubai Mall,Unit 119 - Financial Ctr St - Burj Khalifa - Downtown Dubai - Dubai - United Arab Emirates,,,04 339 9716,https://www.bateel.com/,cafe,"Dubai, UAE",google_maps
+Cafe Rider Custom,Warehouse 7 14B Street - Al Qouz Ind.third - Al Quoz - Dubai - United Arab Emirates,,,04 321 4411,https://caferider.com/,cafe,"Dubai, UAE",google_maps
+The Coffee Lab - Specialty Coffee Roasters,"B02, Marina Views - مدينة دبي الملاحية - ميناء راشد - دبي - United Arab Emirates",,,04 546 4670,http://www.thecoffeelab.ae/,coffee shop,"Dubai, UAE",google_maps
+Nùr Cafe Manchester,"45 Deansgate, Manchester M3 2AY, UK",,,0161 821 0139,https://nurcafe.co.uk/,cafe,"Manchester, UK",google_maps
+Moose Coffee,"20 York St, Manchester M2 3BB, UK",,,0161 228 7994,http://www.moosecoffee.co/,breakfast restaurant,"Manchester, UK",google_maps
+Cafe 19,"19 Lever St, Manchester M1 1BY, UK",,,07380 196010,http://19cafebar.com/,cafe,"Manchester, UK",google_maps
+La Vie Cafe Manchester,"48 Deansgate, Manchester M3 2FE, UK",,,0161 839 5915,http://laviemcr.co.uk/,brunch restaurant,"Manchester, UK",google_maps
+Haunt MCR,"58 Peter St, Manchester M2 3NQ, UK",,,0161 711 1185,https://haunt-mcr.co.uk/,coffee shop,"Manchester, UK",google_maps
+Black Sheep Coffee & Cocktails,"60 Spring Gardens, Manchester M2 2BQ, UK",,,020 3988 6994,https://blacksheepcoffee.co.uk/blogs/locations/spring-gardens?utm_source=ExtNet&utm_medium=Yext,coffee shop,"Manchester, UK",google_maps
+My Awesome Cafe,"202 Telok Ayer St, Singapore 068639",,,8798 1783,http://www.myawesomecafe.com/,restaurant,Singapore,google_maps
+Penny University,"17 Jln Klapa, Singapore 199329",,,8727 1395,http://www.pennyuniversitysg.com/,cafe,Singapore,google_maps

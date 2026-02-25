@@ -75,9 +75,25 @@ def load_enriched_files(niche_slug: str) -> list[dict]:
     return all_records
 
 
-def deduplicate(records: list[dict]) -> list[dict]:
+def load_existing_emails(leads_dir: str) -> set[str]:
+    """Load all emails already saved in the Leads/ folder to avoid duplicates."""
+    seen = set()
+    for filepath in glob.glob(os.path.join(leads_dir, "*.csv")):
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    email = row.get("email", "").strip().lower()
+                    if email:
+                        seen.add(email)
+        except Exception:
+            pass
+    return seen
+
+
+def deduplicate(records: list[dict], existing_emails: set[str] = None) -> list[dict]:
     seen_place_ids: set[str] = set()
-    seen_emails: set[str] = set()
+    seen_emails: set[str] = set(existing_emails or set())
     unique = []
 
     for record in records:
@@ -116,17 +132,21 @@ def normalize(record: dict, niche: str) -> dict:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--niche", required=True, help="Business type used in the search")
+    parser.add_argument("--exclude-leads-dir", default="Leads", help="Directory of existing leads CSVs to deduplicate against")
     args = parser.parse_args()
 
     niche_slug = slugify(args.niche)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_path = f".tmp/leads_{niche_slug}_{timestamp}.csv"
 
+    existing_emails = load_existing_emails(args.exclude_leads_dir)
+    print(f"[INFO] Loaded {len(existing_emails)} existing emails to exclude from '{args.exclude_leads_dir}'")
+
     print(f"[INFO] Loading enriched files for niche: '{args.niche}'")
     records = load_enriched_files(niche_slug)
     print(f"[INFO] Total before dedup: {len(records)}")
 
-    records = deduplicate(records)
+    records = deduplicate(records, existing_emails)
     print(f"[INFO] Total after dedup:  {len(records)}")
 
     if len(records) < 1000:
